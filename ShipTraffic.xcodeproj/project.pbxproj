@@ -14,6 +14,13 @@
 		C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C069919E87A2500FEF61F /* Images.xcassets */; };
 		C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38C069B19E87A2500FEF61F /* LaunchScreen.xib */; };
 		C38C06A919E87A2500FEF61F /* ShipTrafficTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C06A819E87A2500FEF61F /* ShipTrafficTests.m */; };
+		C38C06B319E87AD100FEF61F /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B219E87AD100FEF61F /* WhirlyGlobeMaplyComponent.framework */; };
+		C38C06B519E87B0E00FEF61F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B419E87B0E00FEF61F /* CoreLocation.framework */; };
+		C38C06B719E87B1900FEF61F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B619E87B1900FEF61F /* libc++.dylib */; };
+		C38C06B919E87B2000FEF61F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B819E87B2000FEF61F /* libz.dylib */; };
+		C38C06BB19E87B2900FEF61F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BA19E87B2900FEF61F /* libxml2.dylib */; };
+		C38C06BD19E87B3000FEF61F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */; };
+		C38C06C019E883D100FEF61F /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = C38C06BF19E883D100FEF61F /* ship.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,14 @@
 		C38C06A219E87A2500FEF61F /* ShipTrafficTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTrafficTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C06A719E87A2500FEF61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C38C06A819E87A2500FEF61F /* ShipTrafficTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShipTrafficTests.m; sourceTree = "<group>"; };
+		C38C06B219E87AD100FEF61F /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhirlyGlobeMaplyComponent.framework; path = ../../WhirlyGlobeMaplyComponent.framework; sourceTree = "<group>"; };
+		C38C06B419E87B0E00FEF61F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C38C06B619E87B1900FEF61F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C38C06B819E87B2000FEF61F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C38C06BA19E87B2900FEF61F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C38C06BF19E883D100FEF61F /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = ../../../../../ship.png; sourceTree = "<group>"; };
+		C38C06C119E89F1800FEF61F /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = "../../../Mapbox-iOS-SDK-1.4.1/libMapbox.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38C06BD19E87B3000FEF61F /* libsqlite3.dylib in Frameworks */,
+				C38C06BB19E87B2900FEF61F /* libxml2.dylib in Frameworks */,
+				C38C06B919E87B2000FEF61F /* libz.dylib in Frameworks */,
+				C38C06B719E87B1900FEF61F /* libc++.dylib in Frameworks */,
+				C38C06B519E87B0E00FEF61F /* CoreLocation.framework in Frameworks */,
+				C38C06B319E87AD100FEF61F /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,13 @@
 		C38C068019E87A2500FEF61F = {
 			isa = PBXGroup;
 			children = (
+				C38C06C119E89F1800FEF61F /* libMapbox.a */,
+				C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */,
+				C38C06BA19E87B2900FEF61F /* libxml2.dylib */,
+				C38C06B819E87B2000FEF61F /* libz.dylib */,
+				C38C06B619E87B1900FEF61F /* libc++.dylib */,
+				C38C06B419E87B0E00FEF61F /* CoreLocation.framework */,
+				C38C06B219E87AD100FEF61F /* WhirlyGlobeMaplyComponent.framework */,
 				C38C068B19E87A2500FEF61F /* ShipTraffic */,
 				C38C06A519E87A2500FEF61F /* ShipTrafficTests */,
 				C38C068A19E87A2500FEF61F /* Products */,
@@ -81,6 +109,7 @@
 		C38C068B19E87A2500FEF61F /* ShipTraffic */ = {
 			isa = PBXGroup;
 			children = (
+				C38C06BE19E8838000FEF61F /* Resources */,
 				C38C069019E87A2500FEF61F /* AppDelegate.h */,
 				C38C069119E87A2500FEF61F /* AppDelegate.m */,
 				C38C069319E87A2500FEF61F /* ViewController.h */,
@@ -117,6 +146,14 @@
 				C38C06A719E87A2500FEF61F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C38C06BE19E8838000FEF61F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C38C06BF19E883D100FEF61F /* ship.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +239,7 @@
 				C38C069819E87A2500FEF61F /* Main.storyboard in Resources */,
 				C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */,
 				C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */,
+				C38C06C019E883D100FEF61F /* ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +383,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sallykong/Desktop/WGMaply/WhirlyGlobe_Maply_Distribution_2_3,
+				);
+				HEADER_SEARCH_PATHS = (
+					/Appllication/Xcode.app/Contents/Developer/Toolchians/XcodeDefault.xctoolchain/usr/include,
+					"\"../../WhirlyGlobeMaplyComponent.framework/Headers/\"",
+				);
 				INFOPLIST_FILE = ShipTraffic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sallykong/Desktop/WGMaply/Mapbox-iOS-SDK-1.4.1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,8 +405,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sallykong/Desktop/WGMaply/WhirlyGlobe_Maply_Distribution_2_3,
+				);
+				HEADER_SEARCH_PATHS = (
+					/Appllication/Xcode.app/Contents/Developer/Toolchians/XcodeDefault.xctoolchain/usr/include,
+					"\"../../WhirlyGlobeMaplyComponent.framework/Headers/\"",
+				);
 				INFOPLIST_FILE = ShipTraffic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sallykong/Desktop/WGMaply/Mapbox-iOS-SDK-1.4.1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
