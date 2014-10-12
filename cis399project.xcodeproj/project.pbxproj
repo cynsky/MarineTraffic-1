@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C9169C319E87A2000F66C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169C219E87A2000F66C00 /* Foundation.framework */; };
+		4C9169C519E87A2000F66C00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169C419E87A2000F66C00 /* CoreGraphics.framework */; };
+		4C9169C719E87A2000F66C00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169C619E87A2000F66C00 /* UIKit.framework */; };
+		4C9169CD19E87A2000F66C00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9169CB19E87A2000F66C00 /* InfoPlist.strings */; };
+		4C9169CF19E87A2000F66C00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9169CE19E87A2000F66C00 /* main.m */; };
+		4C9169D319E87A2000F66C00 /* JAKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9169D219E87A2000F66C00 /* JAKAppDelegate.m */; };
+		4C9169DC19E87A2000F66C00 /* JAKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9169DB19E87A2000F66C00 /* JAKViewController.m */; };
+		4C9169DE19E87A2000F66C00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9169DD19E87A2000F66C00 /* Images.xcassets */; };
+		4C9169E519E87A2000F66C00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169E419E87A2000F66C00 /* XCTest.framework */; };
+		4C9169E619E87A2000F66C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169C219E87A2000F66C00 /* Foundation.framework */; };
+		4C9169E719E87A2000F66C00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169C619E87A2000F66C00 /* UIKit.framework */; };
+		4C9169EF19E87A2000F66C00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9169ED19E87A2000F66C00 /* InfoPlist.strings */; };
+		4C9169F119E87A2100F66C00 /* cis399projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9169F019E87A2100F66C00 /* cis399projectTests.m */; };
+		4C9169FB19E87AD500F66C00 /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169FA19E87AD500F66C00 /* WhirlyGlobeMaplyComponent.framework */; };
+		4C9169FD19E87B2100F66C00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169FC19E87B2100F66C00 /* CoreLocation.framework */; };
+		4C9169FF19E87B3D00F66C00 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9169FE19E87B3D00F66C00 /* libc++.dylib */; };
+		4C916A0119E87B4A00F66C00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A0019E87B4A00F66C00 /* libz.dylib */; };
+		4C916A0319E87B5C00F66C00 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A0219E87B5C00F66C00 /* libxml2.dylib */; };
+		4C916A0519E87B7A00F66C00 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A0419E87B7A00F66C00 /* libsqlite3.dylib */; };
+		4C93E40319E9AF9F008CB136 /* QuakeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93E40219E9AF9F008CB136 /* QuakeParser.m */; };
+		4C93E40919E9E4FE008CB136 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93E40719E9E4FE008CB136 /* OptionsViewController.m */; };
+		4C93E40A19E9E4FE008CB136 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93E40819E9E4FE008CB136 /* OptionsViewController.xib */; };
+		4C93E41419EA0831008CB136 /* alcohol-shop-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C93E41119EA0831008CB136 /* alcohol-shop-24@2x.png */; };
+		4C93E41519EA0831008CB136 /* baseball-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C93E41219EA0831008CB136 /* baseball-24@2x.png */; };
+		4C93E41619EA0831008CB136 /* danger-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C93E41319EA0831008CB136 /* danger-24@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C9169E819E87A2000F66C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C9169B719E87A1F00F66C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9169BE19E87A2000F66C00;
+			remoteInfo = cis399project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C9169BF19E87A2000F66C00 /* cis399project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cis399project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9169C219E87A2000F66C00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C9169C419E87A2000F66C00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C9169C619E87A2000F66C00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C9169CA19E87A2000F66C00 /* cis399project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cis399project-Info.plist"; sourceTree = "<group>"; };
+		4C9169CC19E87A2000F66C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C9169CE19E87A2000F66C00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C9169D019E87A2000F66C00 /* cis399project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cis399project-Prefix.pch"; sourceTree = "<group>"; };
+		4C9169D119E87A2000F66C00 /* JAKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKAppDelegate.h; sourceTree = "<group>"; };
+		4C9169D219E87A2000F66C00 /* JAKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKAppDelegate.m; sourceTree = "<group>"; };
+		4C9169DA19E87A2000F66C00 /* JAKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKViewController.h; sourceTree = "<group>"; };
+		4C9169DB19E87A2000F66C00 /* JAKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKViewController.m; sourceTree = "<group>"; };
+		4C9169DD19E87A2000F66C00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C9169E319E87A2000F66C00 /* cis399projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cis399projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9169E419E87A2000F66C00 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C9169EC19E87A2000F66C00 /* cis399projectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cis399projectTests-Info.plist"; sourceTree = "<group>"; };
+		4C9169EE19E87A2000F66C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C9169F019E87A2100F66C00 /* cis399projectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cis399projectTests.m; sourceTree = "<group>"; };
+		4C9169FA19E87AD500F66C00 /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhirlyGlobeMaplyComponent.framework; path = ../../WhirlyGlobeMaplyComponent.framework; sourceTree = "<group>"; };
+		4C9169FC19E87B2100F66C00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4C9169FE19E87B3D00F66C00 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4C916A0019E87B4A00F66C00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4C916A0219E87B5C00F66C00 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4C916A0419E87B7A00F66C00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4C93E40119E9AF9F008CB136 /* QuakeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeParser.h; sourceTree = "<group>"; };
+		4C93E40219E9AF9F008CB136 /* QuakeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeParser.m; sourceTree = "<group>"; };
+		4C93E40619E9E4FE008CB136 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		4C93E40719E9E4FE008CB136 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		4C93E40819E9E4FE008CB136 /* OptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsViewController.xib; sourceTree = "<group>"; };
+		4C93E41119EA0831008CB136 /* alcohol-shop-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alcohol-shop-24@2x.png"; path = "../../../resources/maki icons/alcohol-shop-24@2x.png"; sourceTree = "<group>"; };
+		4C93E41219EA0831008CB136 /* baseball-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "baseball-24@2x.png"; path = "../../../resources/maki icons/baseball-24@2x.png"; sourceTree = "<group>"; };
+		4C93E41319EA0831008CB136 /* danger-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "danger-24@2x.png"; path = "../../../resources/maki icons/danger-24@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C9169BC19E87A2000F66C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A0519E87B7A00F66C00 /* libsqlite3.dylib in Frameworks */,
+				4C916A0319E87B5C00F66C00 /* libxml2.dylib in Frameworks */,
+				4C916A0119E87B4A00F66C00 /* libz.dylib in Frameworks */,
+				4C9169FF19E87B3D00F66C00 /* libc++.dylib in Frameworks */,
+				4C9169FD19E87B2100F66C00 /* CoreLocation.framework in Frameworks */,
+				4C9169FB19E87AD500F66C00 /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
+				4C9169C519E87A2000F66C00 /* CoreGraphics.framework in Frameworks */,
+				4C9169C719E87A2000F66C00 /* UIKit.framework in Frameworks */,
+				4C9169C319E87A2000F66C00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9169E019E87A2000F66C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9169E519E87A2000F66C00 /* XCTest.framework in Frameworks */,
+				4C9169E719E87A2000F66C00 /* UIKit.framework in Frameworks */,
+				4C9169E619E87A2000F66C00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C9169B619E87A1F00F66C00 = {
+			isa = PBXGroup;
+			children = (
+				4C9169C819E87A2000F66C00 /* cis399project */,
+				4C9169EA19E87A2000F66C00 /* cis399projectTests */,
+				4C9169C119E87A2000F66C00 /* Frameworks */,
+				4C9169C019E87A2000F66C00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C9169C019E87A2000F66C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C9169BF19E87A2000F66C00 /* cis399project.app */,
+				4C9169E319E87A2000F66C00 /* cis399projectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C9169C119E87A2000F66C00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A0419E87B7A00F66C00 /* libsqlite3.dylib */,
+				4C916A0219E87B5C00F66C00 /* libxml2.dylib */,
+				4C916A0019E87B4A00F66C00 /* libz.dylib */,
+				4C9169FE19E87B3D00F66C00 /* libc++.dylib */,
+				4C9169FC19E87B2100F66C00 /* CoreLocation.framework */,
+				4C9169FA19E87AD500F66C00 /* WhirlyGlobeMaplyComponent.framework */,
+				4C9169C219E87A2000F66C00 /* Foundation.framework */,
+				4C9169C419E87A2000F66C00 /* CoreGraphics.framework */,
+				4C9169C619E87A2000F66C00 /* UIKit.framework */,
+				4C9169E419E87A2000F66C00 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C9169C819E87A2000F66C00 /* cis399project */ = {
+			isa = PBXGroup;
+			children = (
+				4C93E41119EA0831008CB136 /* alcohol-shop-24@2x.png */,
+				4C93E41219EA0831008CB136 /* baseball-24@2x.png */,
+				4C93E41319EA0831008CB136 /* danger-24@2x.png */,
+				4C9169D119E87A2000F66C00 /* JAKAppDelegate.h */,
+				4C9169D219E87A2000F66C00 /* JAKAppDelegate.m */,
+				4C9169DA19E87A2000F66C00 /* JAKViewController.h */,
+				4C9169DB19E87A2000F66C00 /* JAKViewController.m */,
+				4C9169DD19E87A2000F66C00 /* Images.xcassets */,
+				4C9169C919E87A2000F66C00 /* Supporting Files */,
+				4C93E40119E9AF9F008CB136 /* QuakeParser.h */,
+				4C93E40219E9AF9F008CB136 /* QuakeParser.m */,
+				4C93E40619E9E4FE008CB136 /* OptionsViewController.h */,
+				4C93E40719E9E4FE008CB136 /* OptionsViewController.m */,
+				4C93E40819E9E4FE008CB136 /* OptionsViewController.xib */,
+			);
+			path = cis399project;
+			sourceTree = "<group>";
+		};
+		4C9169C919E87A2000F66C00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C9169CA19E87A2000F66C00 /* cis399project-Info.plist */,
+				4C9169CB19E87A2000F66C00 /* InfoPlist.strings */,
+				4C9169CE19E87A2000F66C00 /* main.m */,
+				4C9169D019E87A2000F66C00 /* cis399project-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C9169EA19E87A2000F66C00 /* cis399projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C9169F019E87A2100F66C00 /* cis399projectTests.m */,
+				4C9169EB19E87A2000F66C00 /* Supporting Files */,
+			);
+			path = cis399projectTests;
+			sourceTree = "<group>";
+		};
+		4C9169EB19E87A2000F66C00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C9169EC19E87A2000F66C00 /* cis399projectTests-Info.plist */,
+				4C9169ED19E87A2000F66C00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C9169BE19E87A2000F66C00 /* cis399project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9169F419E87A2100F66C00 /* Build configuration list for PBXNativeTarget "cis399project" */;
+			buildPhases = (
+				4C9169BB19E87A2000F66C00 /* Sources */,
+				4C9169BC19E87A2000F66C00 /* Frameworks */,
+				4C9169BD19E87A2000F66C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cis399project;
+			productName = cis399project;
+			productReference = 4C9169BF19E87A2000F66C00 /* cis399project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C9169E219E87A2000F66C00 /* cis399projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9169F719E87A2100F66C00 /* Build configuration list for PBXNativeTarget "cis399projectTests" */;
+			buildPhases = (
+				4C9169DF19E87A2000F66C00 /* Sources */,
+				4C9169E019E87A2000F66C00 /* Frameworks */,
+				4C9169E119E87A2000F66C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C9169E919E87A2000F66C00 /* PBXTargetDependency */,
+			);
+			name = cis399projectTests;
+			productName = cis399projectTests;
+			productReference = 4C9169E319E87A2000F66C00 /* cis399projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C9169B719E87A1F00F66C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JAK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jinah Kim";
+				TargetAttributes = {
+					4C9169E219E87A2000F66C00 = {
+						TestTargetID = 4C9169BE19E87A2000F66C00;
+					};
+				};
+			};
+			buildConfigurationList = 4C9169BA19E87A2000F66C00 /* Build configuration list for PBXProject "cis399project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C9169B619E87A1F00F66C00;
+			productRefGroup = 4C9169C019E87A2000F66C00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C9169BE19E87A2000F66C00 /* cis399project */,
+				4C9169E219E87A2000F66C00 /* cis399projectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C9169BD19E87A2000F66C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C93E41519EA0831008CB136 /* baseball-24@2x.png in Resources */,
+				4C93E41419EA0831008CB136 /* alcohol-shop-24@2x.png in Resources */,
+				4C9169DE19E87A2000F66C00 /* Images.xcassets in Resources */,
+				4C93E40A19E9E4FE008CB136 /* OptionsViewController.xib in Resources */,
+				4C93E41619EA0831008CB136 /* danger-24@2x.png in Resources */,
+				4C9169CD19E87A2000F66C00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9169E119E87A2000F66C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9169EF19E87A2000F66C00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C9169BB19E87A2000F66C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C93E40319E9AF9F008CB136 /* QuakeParser.m in Sources */,
+				4C9169DC19E87A2000F66C00 /* JAKViewController.m in Sources */,
+				4C93E40919E9E4FE008CB136 /* OptionsViewController.m in Sources */,
+				4C9169CF19E87A2000F66C00 /* main.m in Sources */,
+				4C9169D319E87A2000F66C00 /* JAKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9169DF19E87A2000F66C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9169F119E87A2100F66C00 /* cis399projectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C9169E919E87A2000F66C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C9169BE19E87A2000F66C00 /* cis399project */;
+			targetProxy = 4C9169E819E87A2000F66C00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C9169CB19E87A2000F66C00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C9169CC19E87A2000F66C00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C9169ED19E87A2000F66C00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C9169EE19E87A2000F66C00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C9169F219E87A2100F66C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C9169F319E87A2100F66C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C9169F519E87A2100F66C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jinah/Desktop/WhirlyGlobe/WhirlyGlobe_Maply_Distribution_2_3,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cis399project/cis399project-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../WhirlyGlobeMaplyComponent.framework/Headers/,
+				);
+				INFOPLIST_FILE = "cis399project/cis399project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C9169F619E87A2100F66C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jinah/Desktop/WhirlyGlobe/WhirlyGlobe_Maply_Distribution_2_3,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cis399project/cis399project-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../WhirlyGlobeMaplyComponent.framework/Headers/,
+				);
+				INFOPLIST_FILE = "cis399project/cis399project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C9169F819E87A2100F66C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cis399project.app/cis399project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cis399project/cis399project-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cis399projectTests/cis399projectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4C9169F919E87A2100F66C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cis399project.app/cis399project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cis399project/cis399project-Prefix.pch";
+				INFOPLIST_FILE = "cis399projectTests/cis399projectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C9169BA19E87A2000F66C00 /* Build configuration list for PBXProject "cis399project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9169F219E87A2100F66C00 /* Debug */,
+				4C9169F319E87A2100F66C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9169F419E87A2100F66C00 /* Build configuration list for PBXNativeTarget "cis399project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9169F519E87A2100F66C00 /* Debug */,
+				4C9169F619E87A2100F66C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9169F719E87A2100F66C00 /* Build configuration list for PBXNativeTarget "cis399projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9169F819E87A2100F66C00 /* Debug */,
+				4C9169F919E87A2100F66C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C9169B719E87A1F00F66C00 /* Project object */;
+}
