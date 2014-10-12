@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WhirlyGlobeComponent.h"
+#import "OptionsViewController.h"
 
+@interface ViewController : UIViewController <WhirlyGlobeViewControllerDelegate>
 
+@property OptionType option;
 
-@interface ViewController : UIViewController {}
 @end
 

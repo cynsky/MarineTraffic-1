@@ -7,16 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "OptionsViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+{
+    UINavigationController *navC;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //ViewController *viewC = [[ViewController alloc] init];
+    OptionsViewController *viewC = [[OptionsViewController alloc] initWithNibName: @"OptionsViewController"
+                                                                          bundle:[NSBundle mainBundle]];
+    navC = [[UINavigationController alloc] initWithRootViewController:viewC];
+    
+    navC.navigationBar.barStyle = UIBarStyleBlackOpaque;
+    self.window.rootViewController = navC;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

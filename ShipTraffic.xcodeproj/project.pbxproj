@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C311B26E19E9A8040087C5A7 /* baseball-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */; };
+		C311B27119E9AE9C0087C5A7 /* QuakeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C311B27019E9AE9C0087C5A7 /* QuakeParser.m */; };
+		C311B27319E9D5AA0087C5A7 /* danger-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */; };
+		C311B27719E9E4E90087C5A7 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C311B27519E9E4E90087C5A7 /* OptionsViewController.m */; };
+		C311B27819E9E4E90087C5A7 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C311B27619E9E4E90087C5A7 /* OptionsViewController.xib */; };
+		C311B27A19E9F7980087C5A7 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = C311B27919E9F7980087C5A7 /* sample.xml */; };
+		C356067E19E9FB5A0018B923 /* VesselParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C356067D19E9FB5A0018B923 /* VesselParser.m */; };
 		C38C068F19E87A2500FEF61F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C068E19E87A2500FEF61F /* main.m */; };
 		C38C069219E87A2500FEF61F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C069119E87A2500FEF61F /* AppDelegate.m */; };
 		C38C069519E87A2500FEF61F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C069419E87A2500FEF61F /* ViewController.m */; };
-		C38C069819E87A2500FEF61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C069619E87A2500FEF61F /* Main.storyboard */; };
 		C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C069919E87A2500FEF61F /* Images.xcassets */; };
 		C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38C069B19E87A2500FEF61F /* LaunchScreen.xib */; };
 		C38C06A919E87A2500FEF61F /* ShipTrafficTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C06A819E87A2500FEF61F /* ShipTrafficTests.m */; };
@@ -34,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "baseball-24@2x.png"; path = "../../../resources/maki icons/baseball-24@2x.png"; sourceTree = "<group>"; };
+		C311B26F19E9AE9C0087C5A7 /* QuakeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeParser.h; sourceTree = "<group>"; };
+		C311B27019E9AE9C0087C5A7 /* QuakeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeParser.m; sourceTree = "<group>"; };
+		C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "danger-24@2x.png"; path = "../../../resources/maki icons/danger-24@2x.png"; sourceTree = "<group>"; };
+		C311B27419E9E4E90087C5A7 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		C311B27519E9E4E90087C5A7 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		C311B27619E9E4E90087C5A7 /* OptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsViewController.xib; sourceTree = "<group>"; };
+		C311B27919E9F7980087C5A7 /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xml; path = ../../../../../../Downloads/sample.xml; sourceTree = "<group>"; };
+		C356067C19E9FB5A0018B923 /* VesselParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VesselParser.h; sourceTree = "<group>"; };
+		C356067D19E9FB5A0018B923 /* VesselParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VesselParser.m; sourceTree = "<group>"; };
 		C38C068919E87A2500FEF61F /* ShipTraffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipTraffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C068D19E87A2500FEF61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C38C068E19E87A2500FEF61F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +57,6 @@
 		C38C069119E87A2500FEF61F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C38C069319E87A2500FEF61F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C38C069419E87A2500FEF61F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C38C069719E87A2500FEF61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C38C069919E87A2500FEF61F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C38C069C19E87A2500FEF61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C38C06A219E87A2500FEF61F /* ShipTrafficTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTrafficTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,10 +129,16 @@
 				C38C069119E87A2500FEF61F /* AppDelegate.m */,
 				C38C069319E87A2500FEF61F /* ViewController.h */,
 				C38C069419E87A2500FEF61F /* ViewController.m */,
-				C38C069619E87A2500FEF61F /* Main.storyboard */,
+				C311B27419E9E4E90087C5A7 /* OptionsViewController.h */,
+				C311B27519E9E4E90087C5A7 /* OptionsViewController.m */,
+				C311B27619E9E4E90087C5A7 /* OptionsViewController.xib */,
 				C38C069919E87A2500FEF61F /* Images.xcassets */,
 				C38C069B19E87A2500FEF61F /* LaunchScreen.xib */,
 				C38C068C19E87A2500FEF61F /* Supporting Files */,
+				C311B26F19E9AE9C0087C5A7 /* QuakeParser.h */,
+				C311B27019E9AE9C0087C5A7 /* QuakeParser.m */,
+				C356067C19E9FB5A0018B923 /* VesselParser.h */,
+				C356067D19E9FB5A0018B923 /* VesselParser.m */,
 			);
 			path = ShipTraffic;
 			sourceTree = "<group>";
@@ -151,6 +172,9 @@
 		C38C06BE19E8838000FEF61F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C311B27919E9F7980087C5A7 /* sample.xml */,
+				C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */,
+				C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */,
 				C38C06BF19E883D100FEF61F /* ship.png */,
 			);
 			name = Resources;
@@ -236,8 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38C069819E87A2500FEF61F /* Main.storyboard in Resources */,
+				C311B27319E9D5AA0087C5A7 /* danger-24@2x.png in Resources */,
+				C311B27819E9E4E90087C5A7 /* OptionsViewController.xib in Resources */,
 				C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */,
+				C311B27A19E9F7980087C5A7 /* sample.xml in Resources */,
+				C311B26E19E9A8040087C5A7 /* baseball-24@2x.png in Resources */,
 				C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */,
 				C38C06C019E883D100FEF61F /* ship.png in Resources */,
 			);
@@ -257,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C311B27119E9AE9C0087C5A7 /* QuakeParser.m in Sources */,
 				C38C069519E87A2500FEF61F /* ViewController.m in Sources */,
+				C356067E19E9FB5A0018B923 /* VesselParser.m in Sources */,
+				C311B27719E9E4E90087C5A7 /* OptionsViewController.m in Sources */,
 				C38C069219E87A2500FEF61F /* AppDelegate.m in Sources */,
 				C38C068F19E87A2500FEF61F /* main.m in Sources */,
 			);
@@ -282,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C38C069619E87A2500FEF61F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C38C069719E87A2500FEF61F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C38C069B19E87A2500FEF61F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -476,6 +498,7 @@
 				C38C06AE19E87A2500FEF61F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C38C06AF19E87A2500FEF61F /* Build configuration list for PBXNativeTarget "ShipTrafficTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +507,7 @@
 				C38C06B119E87A2500FEF61F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

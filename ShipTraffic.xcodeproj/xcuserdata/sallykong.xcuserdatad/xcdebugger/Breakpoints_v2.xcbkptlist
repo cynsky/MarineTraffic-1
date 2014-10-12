@@ -24,12 +24,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShipTraffic/ViewController.m"
-            timestampString = "434682159.672777"
+            timestampString = "434765277.992701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-globeViewController:didSelect:atLoc:onScreen:"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -40,12 +40,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShipTraffic/ViewController.m"
-            timestampString = "434682159.672777"
+            timestampString = "434765277.992701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-globeViewController:didSelect:atLoc:onScreen:"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -56,12 +56,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShipTraffic/ViewController.m"
-            timestampString = "434682159.672777"
+            timestampString = "434765277.992701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "-globeViewController:didSelect:atLoc:onScreen:"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "-fetchEarthquakes"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
