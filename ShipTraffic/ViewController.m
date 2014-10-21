@@ -81,7 +81,7 @@
    
     [theViewC addLayer:pageLayer];
     
-    //Screen Marker (can be used for ship icons)
+    /*Screen Marker (can be used for ship icons)
     MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
     //degrees input but in marker loc it will be radians longitude, latitude
     marker.loc = MaplyCoordinateMakeWithDegrees(longi, lat);
@@ -95,7 +95,7 @@
                                  kMaplyMinVis:@0.0,
                                  kMaplyMaxVis:@3.0,
                                  }
-                          mode:MaplyThreadAny];
+                          mode:MaplyThreadAny];*/
                                     
     //1 = radius of the earth
     [theViewC setHeight: 1.0];
@@ -108,7 +108,7 @@
             [self fetchEarthquakes];
             break;
         case StadiumOption:
-            [self fetchStadiums];
+            [self fetchVessels];
             break;
     }
 }
@@ -116,9 +116,7 @@
 -(void) fetchVessels
 {
     NSData *xmlData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]
-                                                      pathForResource:@"sample" ofType:@"xml"]];
-    NSString *feedStr = [[NSString alloc] initWithData:xmlData encoding:NSASCIIStringEncoding];
-    // NSLog(@"feed = %@", feedStr);
+                                                      pathForResource:@"sampleData" ofType:@"xml"]];
     
     VesselParser *vesselParser = [[VesselParser alloc] initWithXMLData:xmlData];
     if([vesselParser.markers count] > 0)
@@ -137,13 +135,13 @@
     [NSURLConnection sendAsynchronousRequest:urlReq queue:[NSOperationQueue mainQueue]
                            completionHandler: ^(NSURLResponse* response, NSData *data, NSError *connectionError)
      {
-         NSLog(@"response: %@", response);
+         //NSLog(@"response: %@", response);
          NSError *jsonError = nil;
          id obj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
          if ([obj isKindOfClass:[NSDictionary class]])
               {
-                  NSDictionary *stadiumDict = obj;
-                  NSLog(@"return: %@", stadiumDict);
+                  //NSDictionary *stadiumDict = obj;
+                  //NSLog(@"return: %@", stadiumDict);
               }
          
          NSMutableArray *stadiums = [NSMutableArray array];
@@ -153,7 +151,7 @@
              MaplyScreenMarker *stadiumMarker = [[MaplyScreenMarker alloc] init];
              stadiumMarker.loc = [stadium center];
              stadiumMarker.userObject = stadium.attributes[@"Ballpark"];
-             stadiumMarker.image = [UIImage imageNamed:@"baseball-24@2x.png"];
+             stadiumMarker.image = [UIImage imageNamed:@"ship.png"];
              stadiumMarker.size = CGSizeMake(24,24);
              stadiumMarker.layoutImportance = MAXFLOAT;
              [stadiums addObject:stadiumMarker];
@@ -216,25 +214,19 @@
 
 //for quadpageload
 - (int)minZoom{
-    return 6;
+    return 7;
 }
 - (int)maxZoom{
-    return 12;
+    return 7;
 }
+
 - (void)startFetchForTile:(MaplyTileID)tileID forLayer:(MaplyQuadPagingLayer *)layer
 {
     MaplyCoordinate ll, ur;
     [layer geoBoundsforTile:tileID ll:&ll ur:&ur];
     
-    MaplyScreenLabel *label = [[MaplyScreenLabel alloc] init];
-    label.text = [NSString stringWithFormat:@"%d: (%d,%d)", tileID.level, tileID.x, tileID.y];
-    MaplyCoordinate mid;
-    mid.x = ((ll.x + ur.x)/2.0);
-    mid.y = ((ll.y + ur.y)/2.0);
-    label.loc = mid;
-    label.selectable = false;
     
-    MaplyComponentObject *compObj = [theViewC addScreenLabels:@[label] desc:@{
+    MaplyComponentObject *compObj = [theViewC addScreenLabels:nil desc:@{
     kMaplyFont: [UIFont systemFontOfSize:(12)]
     }];
     [layer addData:@[compObj] forTile:tileID];

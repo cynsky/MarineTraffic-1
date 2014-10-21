@@ -22,6 +22,7 @@
 {
     self = [super init];
     _markers = [NSMutableArray array];
+    _cnt = 0;
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData: data];
     xmlParser.delegate = self;
@@ -40,24 +41,30 @@
     
 }
 
+-(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
+{
+    NSLog(@"%@", parseError);
+}
+
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     
-    if([elementName isEqualToString:@"entry"])
+    if([elementName isEqualToString:@"vessel"] && _cnt < 300)
     {
-        entryValid = true;
-        titleValid = false;
-        locValid = false;
-        entryTitle = nil;
-        entryLoc = nil;
         
-    } else if([elementName isEqualToString:@"title"])
-    {
-        titleValid = true;
-        
-    } else if([elementName isEqualToString:@"georss:point"])
-    {
-        locValid = true;
+            float lon, lat;
+            lon = [[attributeDict objectForKey: @"LONGITUDE"] floatValue];
+            lat = [[attributeDict objectForKey: @"LATITUDE"] floatValue];
+            MaplyCoordinate loc = MaplyCoordinateMakeWithDegrees(lon, lat);
+            MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
+            marker.loc = loc;
+            marker.image = [UIImage imageNamed:@"ship.png"];
+            marker.size = CGSizeMake(20, 20);
+            marker.userObject = [attributeDict objectForKey: @"NAME"];
+            marker.layoutImportance = MAXFLOAT;
+            [_markers addObject:marker];
+            _cnt += 1;
+            NSLog(@"%lu", (unsigned long)[_markers count]);
     }
 }
 
@@ -74,32 +81,10 @@
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
-    if([elementName isEqualToString: @"entry"])
+    if([elementName isEqualToString: @"vessel"])
     {
-        if(entryValid && entryTitle && entryLoc) {
-            
-            float lon, lat;
-            NSScanner *scanner = [NSScanner scannerWithString: entryLoc];
-            [scanner scanFloat:&lat];
-            [scanner scanFloat:&lon];
-            MaplyCoordinate loc = MaplyCoordinateMakeWithDegrees(lon, lat);
-            MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
-            marker.loc = loc;
-            marker.userObject = entryTitle;
-            marker.image = [UIImage imageNamed:@"danger-24@2x.png"];
-            marker.size = CGSizeMake(20, 20);
-            marker.layoutImportance = MAXFLOAT;
-            [_markers addObject:marker];
-            
-        }
-        entryValid = false;
         
-    } else if ([elementName isEqualToString:@"title"])
-    {
-        titleValid = false;
-    } else if([elementName isEqualToString:@"georss:point"])
-    {
-        locValid = false;
+        //NSLog(@"Done with %@", elementName);
     }
 }
 

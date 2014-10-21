@@ -13,6 +13,7 @@
 
 //The markers we're creating
 @property (nonatomic) NSMutableArray *markers;
+@property (nonatomic) int cnt;
 
 -(id)initWithXMLData: (NSData *)data;
 
