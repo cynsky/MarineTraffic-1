@@ -26,8 +26,8 @@
 		C38C06B919E87B2000FEF61F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B819E87B2000FEF61F /* libz.dylib */; };
 		C38C06BB19E87B2900FEF61F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BA19E87B2900FEF61F /* libxml2.dylib */; };
 		C38C06BD19E87B3000FEF61F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */; };
-		C38C06C019E883D100FEF61F /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = C38C06BF19E883D100FEF61F /* ship.png */; };
-		C3DC43DE19EEDA770028909B /* sampleData.xml in Resources */ = {isa = PBXBuildFile; fileRef = C3DC43DD19EEDA770028909B /* sampleData.xml */; };
+		C3FAF6CD1A07130B00C63D05 /* sampleData.xml in Resources */ = {isa = PBXBuildFile; fileRef = C3FAF6CC1A07130B00C63D05 /* sampleData.xml */; };
+		C3FAF6CF1A07131A00C63D05 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FAF6CE1A07131A00C63D05 /* ship.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +69,9 @@
 		C38C06B819E87B2000FEF61F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C38C06BA19E87B2900FEF61F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		C38C06BF19E883D100FEF61F /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = ../../../../../ship.png; sourceTree = "<group>"; };
 		C38C06C119E89F1800FEF61F /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = "../../../Mapbox-iOS-SDK-1.4.1/libMapbox.a"; sourceTree = "<group>"; };
-		C3DC43DD19EEDA770028909B /* sampleData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sampleData.xml; path = ../../../../../sampleData.xml; sourceTree = "<group>"; };
+		C3FAF6CC1A07130B00C63D05 /* sampleData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sampleData.xml; path = ../../../../sampleData.xml; sourceTree = "<group>"; };
+		C3FAF6CE1A07131A00C63D05 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = ../../../../ship.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,11 +174,11 @@
 		C38C06BE19E8838000FEF61F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C3DC43DD19EEDA770028909B /* sampleData.xml */,
+				C3FAF6CE1A07131A00C63D05 /* ship.png */,
+				C3FAF6CC1A07130B00C63D05 /* sampleData.xml */,
 				C311B27919E9F7980087C5A7 /* sample.xml */,
 				C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */,
 				C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */,
-				C38C06BF19E883D100FEF61F /* ship.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -264,13 +264,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C311B27319E9D5AA0087C5A7 /* danger-24@2x.png in Resources */,
-				C3DC43DE19EEDA770028909B /* sampleData.xml in Resources */,
 				C311B27819E9E4E90087C5A7 /* OptionsViewController.xib in Resources */,
+				C3FAF6CF1A07131A00C63D05 /* ship.png in Resources */,
 				C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */,
 				C311B27A19E9F7980087C5A7 /* sample.xml in Resources */,
 				C311B26E19E9A8040087C5A7 /* baseball-24@2x.png in Resources */,
 				C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */,
-				C38C06C019E883D100FEF61F /* ship.png in Resources */,
+				C3FAF6CD1A07130B00C63D05 /* sampleData.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

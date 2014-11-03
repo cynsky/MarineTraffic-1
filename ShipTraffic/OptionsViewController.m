@@ -51,10 +51,10 @@
     switch(indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"Earthquakes";
+            cell.textLabel.text = @"Sample";
             break;
         case 1:
-            cell.textLabel.text = @"Stadiums";
+            cell.textLabel.text = @"Real Time";
             break;
     }
     return cell;

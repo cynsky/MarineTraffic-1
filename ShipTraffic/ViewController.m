@@ -46,7 +46,7 @@
     
     //OSM Data
     MaplyRemoteTileSource *tileSource = [[MaplyRemoteTileSource alloc]
-                                         initWithBaseURL:@"http://a.tiles.mapbox.com/v3/sallykong.jnojkg14/" ext:@"png" minZoom:0 maxZoom:maxZoom];
+                                         initWithBaseURL:@"http://a.tile.stamen.com/watercolor/" ext:@"png" minZoom:0 maxZoom:maxZoom];
     tileSource.cacheDir = aerialTilesCacheDir;
     aerialLayer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
     
@@ -75,11 +75,11 @@
                 kMaplyLoftedPolyHeight: @0.05, }];*/
     
 
-    MaplyQuadPagingLayer *pageLayer = [[MaplyQuadPagingLayer alloc]
+    /* MaplyQuadPagingLayer *pageLayer = [[MaplyQuadPagingLayer alloc]
                                        initWithCoordSystem:[[MaplySphericalMercator alloc] initWebStandard]
                                        delegate:self];
    
-    [theViewC addLayer:pageLayer];
+    [theViewC addLayer:pageLayer];*/
     
     /*Screen Marker (can be used for ship icons)
     MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
@@ -105,10 +105,10 @@
     switch (_option)
     {
         case EarthQuakeOption:
-            [self fetchEarthquakes];
+            [self fetchVessels];
             break;
         case StadiumOption:
-            [self fetchVessels];
+            [self fetchStadiums];
             break;
     }
 }
@@ -130,18 +130,18 @@
 - (void) fetchStadiums
 {
  
-    NSString *urlStr = @"https://raw.githubusercontent.com/cageyjames/GeoJSON-Ballparks/master/ballparks.geojson";
-    NSURLRequest *urlReq = [NSURLRequest requestWithURL:[NSURL URLWithString: urlStr]];
-    [NSURLConnection sendAsynchronousRequest:urlReq queue:[NSOperationQueue mainQueue]
-                           completionHandler: ^(NSURLResponse* response, NSData *data, NSError *connectionError)
+    NSString *urlStr = @"http://sallykong.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM marinetraffic LIMIT 500";
+    NSString *encodedString = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURLRequest *urlReq = [NSURLRequest requestWithURL:[NSURL URLWithString:encodedString]];
+    [NSURLConnection sendAsynchronousRequest:urlReq queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError)
      {
-         //NSLog(@"response: %@", response);
+         NSLog(@"response: %@", response);
          NSError *jsonError = nil;
          id obj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
          if ([obj isKindOfClass:[NSDictionary class]])
               {
-                  //NSDictionary *stadiumDict = obj;
-                  //NSLog(@"return: %@", stadiumDict);
+                  NSDictionary *stadiumDict = obj;
+                  NSLog(@"return: %@", stadiumDict);
               }
          
          NSMutableArray *stadiums = [NSMutableArray array];
