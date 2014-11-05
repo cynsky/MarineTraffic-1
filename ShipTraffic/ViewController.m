@@ -150,7 +150,7 @@
          {
              MaplyScreenMarker *stadiumMarker = [[MaplyScreenMarker alloc] init];
              stadiumMarker.loc = [stadium center];
-             stadiumMarker.userObject = stadium.attributes[@"Ballpark"];
+             stadiumMarker.userObject = stadium.attributes[@"name"];
              stadiumMarker.image = [UIImage imageNamed:@"ship.png"];
              stadiumMarker.size = CGSizeMake(24,24);
              stadiumMarker.layoutImportance = MAXFLOAT;
