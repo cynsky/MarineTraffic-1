@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C311B26E19E9A8040087C5A7 /* baseball-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */; };
 		C311B27119E9AE9C0087C5A7 /* QuakeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C311B27019E9AE9C0087C5A7 /* QuakeParser.m */; };
-		C311B27319E9D5AA0087C5A7 /* danger-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */; };
 		C311B27719E9E4E90087C5A7 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C311B27519E9E4E90087C5A7 /* OptionsViewController.m */; };
 		C311B27819E9E4E90087C5A7 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C311B27619E9E4E90087C5A7 /* OptionsViewController.xib */; };
 		C311B27A19E9F7980087C5A7 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = C311B27919E9F7980087C5A7 /* sample.xml */; };
+		C311BC1B1A2BC2EE00EF6E03 /* ship-wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = C311BC1A1A2BC2EE00EF6E03 /* ship-wheel.png */; };
+		C33B317A1A1C88D700E9511E /* Vessel.m in Sources */ = {isa = PBXBuildFile; fileRef = C33B31791A1C88D700E9511E /* Vessel.m */; };
 		C356067E19E9FB5A0018B923 /* VesselParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C356067D19E9FB5A0018B923 /* VesselParser.m */; };
 		C38C068F19E87A2500FEF61F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C068E19E87A2500FEF61F /* main.m */; };
 		C38C069219E87A2500FEF61F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C069119E87A2500FEF61F /* AppDelegate.m */; };
@@ -26,8 +26,11 @@
 		C38C06B919E87B2000FEF61F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06B819E87B2000FEF61F /* libz.dylib */; };
 		C38C06BB19E87B2900FEF61F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BA19E87B2900FEF61F /* libxml2.dylib */; };
 		C38C06BD19E87B3000FEF61F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */; };
+		C39462F81A34E7BE00E0CBD3 /* marineTraffic.ico in Resources */ = {isa = PBXBuildFile; fileRef = C39462F71A34E7BE00E0CBD3 /* marineTraffic.ico */; };
+		C39462FA1A34E8A600E0CBD3 /* marineTrafficIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C39462F91A34E8A600E0CBD3 /* marineTrafficIcon.png */; };
 		C3FAF6CD1A07130B00C63D05 /* sampleData.xml in Resources */ = {isa = PBXBuildFile; fileRef = C3FAF6CC1A07130B00C63D05 /* sampleData.xml */; };
 		C3FAF6CF1A07131A00C63D05 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FAF6CE1A07131A00C63D05 /* ship.png */; };
+		C3FD88251A2BE569002EA368 /* marineTraffic.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FD88241A2BE569002EA368 /* marineTraffic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "baseball-24@2x.png"; path = "../../../resources/maki icons/baseball-24@2x.png"; sourceTree = "<group>"; };
 		C311B26F19E9AE9C0087C5A7 /* QuakeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeParser.h; sourceTree = "<group>"; };
 		C311B27019E9AE9C0087C5A7 /* QuakeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeParser.m; sourceTree = "<group>"; };
-		C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "danger-24@2x.png"; path = "../../../resources/maki icons/danger-24@2x.png"; sourceTree = "<group>"; };
 		C311B27419E9E4E90087C5A7 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		C311B27519E9E4E90087C5A7 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
 		C311B27619E9E4E90087C5A7 /* OptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsViewController.xib; sourceTree = "<group>"; };
 		C311B27919E9F7980087C5A7 /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xml; path = ../../../../../../Downloads/sample.xml; sourceTree = "<group>"; };
+		C311BC1A1A2BC2EE00EF6E03 /* ship-wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ship-wheel.png"; path = "../../../../ship-wheel.png"; sourceTree = "<group>"; };
+		C33B31781A1C88D700E9511E /* Vessel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vessel.h; sourceTree = "<group>"; };
+		C33B31791A1C88D700E9511E /* Vessel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vessel.m; sourceTree = "<group>"; };
 		C356067C19E9FB5A0018B923 /* VesselParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VesselParser.h; sourceTree = "<group>"; };
 		C356067D19E9FB5A0018B923 /* VesselParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VesselParser.m; sourceTree = "<group>"; };
 		C38C068919E87A2500FEF61F /* ShipTraffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipTraffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +74,11 @@
 		C38C06BA19E87B2900FEF61F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C38C06BC19E87B3000FEF61F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		C38C06C119E89F1800FEF61F /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = "../../../Mapbox-iOS-SDK-1.4.1/libMapbox.a"; sourceTree = "<group>"; };
+		C39462F71A34E7BE00E0CBD3 /* marineTraffic.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = marineTraffic.ico; sourceTree = "<group>"; };
+		C39462F91A34E8A600E0CBD3 /* marineTrafficIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marineTrafficIcon.png; sourceTree = "<group>"; };
 		C3FAF6CC1A07130B00C63D05 /* sampleData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sampleData.xml; path = ../../../../sampleData.xml; sourceTree = "<group>"; };
 		C3FAF6CE1A07131A00C63D05 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = ../../../../ship.png; sourceTree = "<group>"; };
+		C3FD88241A2BE569002EA368 /* marineTraffic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marineTraffic.png; path = ../../../../marineTraffic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +148,8 @@
 				C311B27019E9AE9C0087C5A7 /* QuakeParser.m */,
 				C356067C19E9FB5A0018B923 /* VesselParser.h */,
 				C356067D19E9FB5A0018B923 /* VesselParser.m */,
+				C33B31781A1C88D700E9511E /* Vessel.h */,
+				C33B31791A1C88D700E9511E /* Vessel.m */,
 			);
 			path = ShipTraffic;
 			sourceTree = "<group>";
@@ -174,11 +183,13 @@
 		C38C06BE19E8838000FEF61F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C39462F91A34E8A600E0CBD3 /* marineTrafficIcon.png */,
+				C39462F71A34E7BE00E0CBD3 /* marineTraffic.ico */,
+				C3FD88241A2BE569002EA368 /* marineTraffic.png */,
+				C311BC1A1A2BC2EE00EF6E03 /* ship-wheel.png */,
 				C3FAF6CE1A07131A00C63D05 /* ship.png */,
 				C3FAF6CC1A07130B00C63D05 /* sampleData.xml */,
 				C311B27919E9F7980087C5A7 /* sample.xml */,
-				C311B27219E9D5AA0087C5A7 /* danger-24@2x.png */,
-				C311B26D19E9A8040087C5A7 /* baseball-24@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -263,14 +274,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C311B27319E9D5AA0087C5A7 /* danger-24@2x.png in Resources */,
+				C39462F81A34E7BE00E0CBD3 /* marineTraffic.ico in Resources */,
 				C311B27819E9E4E90087C5A7 /* OptionsViewController.xib in Resources */,
 				C3FAF6CF1A07131A00C63D05 /* ship.png in Resources */,
 				C38C069D19E87A2500FEF61F /* LaunchScreen.xib in Resources */,
 				C311B27A19E9F7980087C5A7 /* sample.xml in Resources */,
-				C311B26E19E9A8040087C5A7 /* baseball-24@2x.png in Resources */,
 				C38C069A19E87A2500FEF61F /* Images.xcassets in Resources */,
+				C3FD88251A2BE569002EA368 /* marineTraffic.png in Resources */,
 				C3FAF6CD1A07130B00C63D05 /* sampleData.xml in Resources */,
+				C39462FA1A34E8A600E0CBD3 /* marineTrafficIcon.png in Resources */,
+				C311BC1B1A2BC2EE00EF6E03 /* ship-wheel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C311B27119E9AE9C0087C5A7 /* QuakeParser.m in Sources */,
+				C33B317A1A1C88D700E9511E /* Vessel.m in Sources */,
 				C38C069519E87A2500FEF61F /* ViewController.m in Sources */,
 				C356067E19E9FB5A0018B923 /* VesselParser.m in Sources */,
 				C311B27719E9E4E90087C5A7 /* OptionsViewController.m in Sources */,
@@ -423,7 +437,8 @@
 					"$(inherited)",
 					"/Users/sallykong/Desktop/WGMaply/Mapbox-iOS-SDK-1.4.1",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "";
+				PRODUCT_NAME = ShipTraffic;
 			};
 			name = Debug;
 		};
@@ -445,7 +460,7 @@
 					"$(inherited)",
 					"/Users/sallykong/Desktop/WGMaply/Mapbox-iOS-SDK-1.4.1",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ShipTraffic;
 			};
 			name = Release;
 		};
@@ -463,7 +478,7 @@
 				);
 				INFOPLIST_FILE = ShipTrafficTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ShipTrafficTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipTraffic.app/ShipTraffic";
 			};
 			name = Debug;
@@ -478,7 +493,7 @@
 				);
 				INFOPLIST_FILE = ShipTrafficTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ShipTrafficTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipTraffic.app/ShipTraffic";
 			};
 			name = Release;

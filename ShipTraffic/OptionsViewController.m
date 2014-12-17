@@ -41,7 +41,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 2;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,11 +51,36 @@
     switch(indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"Sample";
+            cell.textLabel.text = @"Anti-Pollution";
             break;
         case 1:
-            cell.textLabel.text = @"Real Time";
+            cell.textLabel.text = @"Fishing";
             break;
+        case 2:
+            cell.textLabel.text = @"Military ops";
+            break;
+        case 3:
+            cell.textLabel.text = @"Sailing";
+            break;
+        case 4:
+            cell.textLabel.text = @"Pleasure Craft";
+            break;
+        case 5:
+            cell.textLabel.text = @"Search and Rescue Vessel";
+            break;
+        case 6:
+            cell.textLabel.text = @"Passenger";
+            break;
+        case 7:
+            cell.textLabel.text = @"Cargo";
+            break;
+        case 8:
+            cell.textLabel.text = @"Tanker";
+            break;
+        case 9:
+            cell.textLabel.text = @"Towing";
+            break;
+       
     }
     return cell;
 }

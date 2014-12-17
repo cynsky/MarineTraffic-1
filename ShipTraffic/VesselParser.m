@@ -48,24 +48,19 @@
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-    
-    if([elementName isEqualToString:@"vessel"] && _cnt < 300)
-    {
-        
-            float lon, lat;
-            lon = [[attributeDict objectForKey: @"LONGITUDE"] floatValue];
-            lat = [[attributeDict objectForKey: @"LATITUDE"] floatValue];
-            MaplyCoordinate loc = MaplyCoordinateMakeWithDegrees(lon, lat);
-            MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
-            marker.loc = loc;
-            marker.image = [UIImage imageNamed:@"ship.png"];
-            marker.size = CGSizeMake(20, 20);
-            marker.userObject = [attributeDict objectForKey: @"NAME"];
-            marker.layoutImportance = MAXFLOAT;
-            [_markers addObject:marker];
-            _cnt += 1;
-            NSLog(@"%lu", (unsigned long)[_markers count]);
-    }
+   
+    float lon, lat;
+    lon = [[attributeDict objectForKey: @"LONGITUDE"] floatValue];
+    lat = [[attributeDict objectForKey: @"LATITUDE"] floatValue];
+    MaplyCoordinate loc = MaplyCoordinateMakeWithDegrees(lon, lat);
+    MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
+    marker.loc = loc;
+    marker.image = [UIImage imageNamed:@"ship.png"];
+    marker.size = CGSizeMake(20, 20);
+    marker.userObject = [attributeDict objectForKey: @"NAME"];
+    marker.layoutImportance = MAXFLOAT;
+    [_markers addObject:marker];
+    _cnt += 1;
 }
 
 -(void) parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
